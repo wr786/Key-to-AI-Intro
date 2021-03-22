@@ -1,0 +1,24 @@
+#input
+  first_col of int in [1, 8];
+  second_col of int in [1, 8];
+
+#required
+  col of (int in [1, 8])[1~8];
+  col[1] = first_col;
+  col[2] = second_col;
+
+  // row & col
+  alldiff col;
+
+  // diagnol
+  (i - j != col[i] - col[j]) :
+    forall (i, j) (
+      i != j
+    );
+  (i - j != col[j] - col[i]) :
+    forall (i, j) (
+      i != j
+    );
+
+#output
+  col;

@@ -1,0 +1,12 @@
+#input
+  n of int in [1, 1000];
+  k of int in [0, 20000];
+  array of (int in [0, 10000])[1~n];
+
+#required
+  i of int in [1, n];
+  j of int in [1, n];
+  array[i] + array[j] = k;
+
+#output
+  array[i] * array[j];

@@ -1,0 +1,16 @@
+#input
+  n of int in [1, 100];
+  map of (int in [0, 1000])[1~n][1~n];
+
+#required
+  path of (int in [1, n])[1~n];
+  path[1] = 1;
+  path[n] = n;
+
+#objective
+  minimize summation [
+    map[path[i]][path[i+1]] : 
+      forall i (
+        (1 <= i) and (1 < n)
+      )
+  ];
