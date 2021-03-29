@@ -42,7 +42,6 @@ double simul_anneal() {
     // 随机数生成器
     static default_random_engine randomEngine;                      // 随机数生成引擎
     static uniform_int_distribution<int> intRandom(0, 3);           // int随机数0~3
-    static uniform_real_distribution<double> doubleRandom(0, 1);    // double随机数0~1
     // 不妨从计算机的中点开始移动
     double mx = 0, my = 0;
     for(auto& p: computers) {
